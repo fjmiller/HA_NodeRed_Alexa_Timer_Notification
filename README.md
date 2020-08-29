@@ -1,6 +1,8 @@
 # HomeAssistant Node-Red Alexa Timer Notification
 This is a custom Node Red Flow for notifying via Text To Speech (TTS) on multiple Alexa Devices when a Timer goes off on any device.  This includes the label and takes into account cancelling, pausing and delaying timers.
 
+![NodeRed Alexa Timer Flow](/images/HA_NodeRed_Alexa_Timer_Notification.png)
+
 # How does it work?
  This flow creates a global variable in Node Red (alexaTimerArray) and maintains this as a list of all "Active" Timers or "Cancelled" Timers still running Node Red Flow.  Each Timer change is set to delay until the Timer set time.  Once the set time is achieved the flow evaluates the state to determine if the timer is still active.  If the timer is active it will generate a TTS message and send to all devices except the device where the timer is going off.  Voice notifications are time restricted so that they occur outside of set hours.
   
