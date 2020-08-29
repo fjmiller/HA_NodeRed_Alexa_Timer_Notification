@@ -1,14 +1,11 @@
 # HomeAssistant Node-Red Alexa Timer Notification
-Home Assistant Node Red Flow that notifies on all devices when a timer goes off on Alexa using the Alexa Media Player integration.
-
-# What This is?
 This is a custom Node Red Flow for notifying via Text To Speech (TTS) on multiple Alexa Devices when a Timer goes off on any device.  This includes the label and takes into account cancelling, pausing and delaying timers.
 
 # How does it work?
  This flow creates a global variable in Node Red (alexaTimerArray) and maintains this as a list of all "Active" Timers or "Cancelled" Timers still running Node Red Flow.  Each Timer change is set to delay until the Timer set time.  Once the set time is achieved the flow evaluates the state to determine if the timer is still active.  If the timer is active it will generate a TTS message and send to all devices except the device where the timer is going off.  Voice notifications are time restricted so that they occur outside of set hours.
   
 # How To Install
-## Dependencies:
+## Dependencies
   Requires the installation of the Alexa Media Player Integration.  Install through HACS or from <https://github.com/custom-components/alexa_media_player>
 ## Install Process  
   * Copy the JSON from Alexa_Timers_flow.nodered and import the Flow into Node Red.  
