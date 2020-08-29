@@ -1,7 +1,4 @@
 # HomeAssistant Node-Red Alexa Timer Notification
-Home Assistant Node Red Flow that notifies on all devices when a timer goes off on Alexa using the Alexa Media Player integration.
-
-# What This is?
 This is a custom Node Red Flow for notifying via Text To Speech (TTS) on multiple Alexa Devices when a Timer goes off on any device.  This includes the label and takes into account cancelling, pausing and delaying timers.
 
 # How does it work?
