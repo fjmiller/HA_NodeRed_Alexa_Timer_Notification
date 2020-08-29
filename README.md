@@ -1,4 +1,4 @@
-# HomeAssistant NodeRed Alexa Timer Notification
+# HomeAssistant Node-Red Alexa Timer Notification
 Home Assistant Node Red Flow that notifies on all devices when a timer goes off on Alexa using the Alexa Media Player integration.
 
 # What This is?
